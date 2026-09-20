@@ -1,0 +1,105 @@
+{
+  "tag": "sel_landscape_gt_K10_c7_s42",
+  "seed": 42,
+  "encoder": "imagenet",
+  "best_step": 50,
+  "steps_run": 550,
+  "max_steps": 1500,
+  "eval_every": 50,
+  "patience_evals": 10,
+  "n_train": 10,
+  "steps_per_epoch": 3,
+  "hit_step_cap": false,
+  "plateaued": true,
+  "best_val_mIoU": 0.6237,
+  "trajectory": [
+    {
+      "step": 50,
+      "epochs_equiv": 16.67,
+      "train_loss": 0.4939,
+      "val_loss": 0.8086,
+      "val_mIoU": 0.6237,
+      "val_IoU_fg": 0.5882
+    },
+    {
+      "step": 100,
+      "epochs_equiv": 33.33,
+      "train_loss": 0.2356,
+      "val_loss": 1.0507,
+      "val_mIoU": 0.4974,
+      "val_IoU_fg": 0.5326
+    },
+    {
+      "step": 150,
+      "epochs_equiv": 50.0,
+      "train_loss": 0.3464,
+      "val_loss": 0.9876,
+      "val_mIoU": 0.515,
+      "val_IoU_fg": 0.5352
+    },
+    {
+      "step": 200,
+      "epochs_equiv": 66.67,
+      "train_loss": 0.212,
+      "val_loss": 1.397,
+      "val_mIoU": 0.4116,
+      "val_IoU_fg": 0.4827
+    },
+    {
+      "step": 250,
+      "epochs_equiv": 83.33,
+      "train_loss": 0.1464,
+      "val_loss": 1.195,
+      "val_mIoU": 0.5137,
+      "val_IoU_fg": 0.5369
+    },
+    {
+      "step": 300,
+      "epochs_equiv": 100.0,
+      "train_loss": 0.1523,
+      "val_loss": 1.3053,
+      "val_mIoU": 0.506,
+      "val_IoU_fg": 0.5386
+    },
+    {
+      "step": 350,
+      "epochs_equiv": 116.67,
+      "train_loss": 0.1618,
+      "val_loss": 1.4413,
+      "val_mIoU": 0.3893,
+      "val_IoU_fg": 0.4615
+    },
+    {
+      "step": 400,
+      "epochs_equiv": 133.33,
+      "train_loss": 0.2201,
+      "val_loss": 1.3467,
+      "val_mIoU": 0.5433,
+      "val_IoU_fg": 0.5548
+    },
+    {
+      "step": 450,
+      "epochs_equiv": 150.0,
+      "train_loss": 0.135,
+      "val_loss": 1.1059,
+      "val_mIoU": 0.494,
+      "val_IoU_fg": 0.5267
+    },
+    {
+      "step": 500,
+      "epochs_equiv": 166.67,
+      "train_loss": 0.1061,
+      "val_loss": 1.3238,
+      "val_mIoU": 0.536,
+      "val_IoU_fg": 0.5542
+    },
+    {
+      "step": 550,
+      "epochs_equiv": 183.33,
+      "train_loss": 0.1022,
+      "val_loss": 1.4014,
+      "val_mIoU": 0.4808,
+      "val_IoU_fg": 0.5171
+    }
+  ]
+}

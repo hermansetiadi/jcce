@@ -1,0 +1,34 @@
+{
+  "sam_dataset_SITUBONDO_SITUBONDO": {
+    "counts": {
+      "train": 98,
+      "val": 26,
+      "test": 59
+    },
+    "n_dropped_buffer": 142,
+    "min_origin_chebyshev_px_train_to_val": 1536,
+    "min_edge_gap_px_train_to_val": 512,
+    "min_edge_gap_m_train_to_val": 256.0,
+    "footprints_overlap_train_to_val": false,
+    "min_origin_chebyshev_px_train_to_test": 1024,
+    "min_edge_gap_px_train_to_test": 0,
+    "min_edge_gap_m_train_to_test": 0.0,
+    "footprints_overlap_train_to_test": false
+  },
+  "sam_dataset_Tangerang_Sepatan_Timur": {
+    "counts": {
+      "train": 90,
+      "val": 18,
+      "test": 44
+    },
+    "n_dropped_buffer": 153,
+    "min_origin_chebyshev_px_train_to_val": 1024,
+    "min_edge_gap_px_train_to_val": 0,
+    "min_edge_gap_m_train_to_val": 0.0,
+    "footprints_overlap_train_to_val": false,
+    "min_origin_chebyshev_px_train_to_test": 1536,
+    "min_edge_gap_px_train_to_test": 512,
+    "min_edge_gap_m_train_to_test": 256.0,
+    "footprints_overlap_train_to_test": false
+  }
+}

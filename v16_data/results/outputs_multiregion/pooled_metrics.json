@@ -1,0 +1,577 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "regions": [
+      "sam_dataset_SITUBONDO_SITUBONDO",
+      "sam_dataset_Tangerang_Sepatan_Timur"
+    ],
+    "img_size": 256,
+    "encoder": "resnet18",
+    "loss": "Dice + BCEWithLogits",
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "threshold": 0.5
+  },
+  "pooled": {
+    "setups": {
+      "setup_a": {
+        "n_train": 20,
+        "encoder_weights": "imagenet",
+        "seeds": [
+          {
+            "seed": 42,
+            "best_epoch": 350,
+            "best_val_mIoU": 0.6236
+          },
+          {
+            "seed": 43,
+            "best_epoch": 250,
+            "best_val_mIoU": 0.625
+          },
+          {
+            "seed": 44,
+            "best_epoch": 150,
+            "best_val_mIoU": 0.5938
+          }
+        ],
+        "test_overall": {
+          "mIoU": {
+            "mean": 0.6442,
+            "std": 0.0245,
+            "values": [
+              0.6624,
+              0.6607,
+              0.6096
+            ]
+          },
+          "IoU_foreground": {
+            "mean": 0.5719,
+            "std": 0.011,
+            "values": [
+              0.5788,
+              0.5805,
+              0.5564
+            ]
+          },
+          "IoU_background": {
+            "mean": 0.7166,
+            "std": 0.0381,
+            "values": [
+              0.7459,
+              0.741,
+              0.6628
+            ]
+          },
+          "precision": {
+            "mean": 0.6885,
+            "std": 0.0496,
+            "values": [
+              0.729,
+              0.7179,
+              0.6186
+            ]
+          },
+          "recall": {
+            "mean": 0.7789,
+            "std": 0.0486,
+            "values": [
+              0.7376,
+              0.7521,
+              0.8471
+            ]
+          },
+          "f1": {
+            "mean": 0.7276,
+            "std": 0.0089,
+            "values": [
+              0.7332,
+              0.7346,
+              0.715
+            ]
+          },
+          "false_positive_rate": {
+            "mean": 0.1968,
+            "std": 0.0607,
+            "values": [
+              0.1483,
+              0.1598,
+              0.2824
+            ]
+          },
+          "pixel_accuracy": {
+            "mean": 0.7947,
+            "std": 0.0224,
+            "values": [
+              0.8117,
+              0.8093,
+              0.763
+            ]
+          },
+          "AUPRC": {
+            "mean": 0.7564,
+            "std": 0.0326,
+            "values": [
+              0.797,
+              0.7549,
+              0.7173
+            ]
+          },
+          "best_f1": {
+            "mean": 0.7346,
+            "std": 0.014,
+            "values": [
+              0.7474,
+              0.7414,
+              0.7151
+            ]
+          },
+          "best_f1_threshold": {
+            "mean": 0.3833,
+            "std": 0.1047,
+            "values": [
+              0.275,
+              0.35,
+              0.525
+            ]
+          },
+          "IoU_fg_at_best_f1": {
+            "mean": 0.5807,
+            "std": 0.0174,
+            "values": [
+              0.5967,
+              0.589,
+              0.5565
+            ]
+          },
+          "recall_at_fpr_005": {
+            "mean": 0.4147,
+            "std": 0.0747,
+            "values": [
+              0.5057,
+              0.4157,
+              0.3228
+            ]
+          },
+          "IoU_fg_at_fpr_005": {
+            "mean": 0.3791,
+            "std": 0.0684,
+            "values": [
+              0.4624,
+              0.3801,
+              0.2949
+            ]
+          }
+        },
+        "test_low_coverage": {
+          "mIoU": {
+            "mean": 0.4281,
+            "std": 0.0427,
+            "values": [
+              0.4661,
+              0.4497,
+              0.3684
+            ]
+          },
+          "IoU_foreground": {
+            "mean": 0.0571,
+            "std": 0.0102,
+            "values": [
+              0.0678,
+              0.06,
+              0.0434
+            ]
+          },
+          "IoU_background": {
+            "mean": 0.7991,
+            "std": 0.0755,
+            "values": [
+              0.8645,
+              0.8395,
+              0.6934
+            ]
+          },
+          "precision": {
+            "mean": 0.063,
+            "std": 0.0132,
+            "values": [
+              0.077,
+              0.0666,
+              0.0453
+            ]
+          },
+          "recall": {
+            "mean": 0.4164,
+            "std": 0.0665,
+            "values": [
+              0.3626,
+              0.3765,
+              0.51
+            ]
+          },
+          "f1": {
+            "mean": 0.1078,
+            "std": 0.0183,
+            "values": [
+              0.127,
+              0.1131,
+              0.0832
+            ]
+          },
+          "false_positive_rate": {
+            "mean": 0.1878,
+            "std": 0.078,
+            "values": [
+              0.1203,
+              0.146,
+              0.2972
+            ]
+          },
+          "pixel_accuracy": {
+            "mean": 0.8015,
+            "std": 0.0741,
+            "values": [
+              0.8658,
+              0.8411,
+              0.6977
+            ]
+          },
+          "AUPRC": {
+            "mean": 0.0547,
+            "std": 0.0115,
+            "values": [
+              0.0691,
+              0.0539,
+              0.041
+            ]
+          },
+          "best_f1": {
+            "mean": 0.122,
+            "std": 0.0264,
+            "values": [
+              0.1483,
+              0.1318,
+              0.086
+            ]
+          },
+          "best_f1_threshold": {
+            "mean": 0.74,
+            "std": 0.095,
+            "values": [
+              0.845,
+              0.76,
+              0.615
+            ]
+          },
+          "IoU_fg_at_best_f1": {
+            "mean": 0.0652,
+            "std": 0.0149,
+            "values": [
+              0.0801,
+              0.0705,
+              0.0449
+            ]
+          },
+          "recall_at_fpr_005": {
+            "mean": 0.1686,
+            "std": 0.0529,
+            "values": [
+              0.2246,
+              0.1836,
+              0.0977
+            ]
+          },
+          "IoU_fg_at_fpr_005": {
+            "mean": 0.0604,
+            "std": 0.0186,
+            "values": [
+              0.08,
+              0.0658,
+              0.0354
+            ]
+          }
+        }
+      },
+      "setup_b": {
+        "n_train": 26,
+        "encoder_weights": "imagenet",
+        "seeds": [
+          {
+            "seed": 42,
+            "best_epoch": 750,
+            "best_val_mIoU": 0.6311
+          },
+          {
+            "seed": 43,
+            "best_epoch": 200,
+            "best_val_mIoU": 0.6104
+          },
+          {
+            "seed": 44,
+            "best_epoch": 250,
+            "best_val_mIoU": 0.6129
+          }
+        ],
+        "test_overall": {
+          "mIoU": {
+            "mean": 0.6763,
+            "std": 0.0236,
+            "values": [
+              0.6825,
+              0.6447,
+              0.7016
+            ]
+          },
+          "IoU_foreground": {
+            "mean": 0.5851,
+            "std": 0.0271,
+            "values": [
+              0.5898,
+              0.5498,
+              0.6158
+            ]
+          },
+          "IoU_background": {
+            "mean": 0.7673,
+            "std": 0.0203,
+            "values": [
+              0.7752,
+              0.7395,
+              0.7873
+            ]
+          },
+          "precision": {
+            "mean": 0.777,
+            "std": 0.0316,
+            "values": [
+              0.7942,
+              0.7327,
+              0.8042
+            ]
+          },
+          "recall": {
+            "mean": 0.7028,
+            "std": 0.0157,
+            "values": [
+              0.6961,
+              0.6878,
+              0.7244
+            ]
+          },
+          "f1": {
+            "mean": 0.7379,
+            "std": 0.0217,
+            "values": [
+              0.742,
+              0.7095,
+              0.7622
+            ]
+          },
+          "false_positive_rate": {
+            "mean": 0.1095,
+            "std": 0.0185,
+            "values": [
+              0.0975,
+              0.1356,
+              0.0954
+            ]
+          },
+          "pixel_accuracy": {
+            "mean": 0.8246,
+            "std": 0.0164,
+            "values": [
+              0.8301,
+              0.8024,
+              0.8414
+            ]
+          },
+          "AUPRC": {
+            "mean": 0.7942,
+            "std": 0.0454,
+            "values": [
+              0.8158,
+              0.731,
+              0.8358
+            ]
+          },
+          "best_f1": {
+            "mean": 0.7545,
+            "std": 0.0203,
+            "values": [
+              0.7528,
+              0.7305,
+              0.7802
+            ]
+          },
+          "best_f1_threshold": {
+            "mean": 0.29,
+            "std": 0.0604,
+            "values": [
+              0.205,
+              0.325,
+              0.34
+            ]
+          },
+          "IoU_fg_at_best_f1": {
+            "mean": 0.6062,
+            "std": 0.0263,
+            "values": [
+              0.6036,
+              0.5754,
+              0.6396
+            ]
+          },
+          "recall_at_fpr_005": {
+            "mean": 0.4848,
+            "std": 0.0859,
+            "values": [
+              0.5628,
+              0.3651,
+              0.5264
+            ]
+          },
+          "IoU_fg_at_fpr_005": {
+            "mean": 0.4445,
+            "std": 0.0786,
+            "values": [
+              0.5145,
+              0.3347,
+              0.4842
+            ]
+          }
+        },
+        "test_low_coverage": {
+          "mIoU": {
+            "mean": 0.4965,
+            "std": 0.0151,
+            "values": [
+              0.5011,
+              0.4762,
+              0.5122
+            ]
+          },
+          "IoU_foreground": {
+            "mean": 0.0806,
+            "std": 0.0168,
+            "values": [
+              0.0919,
+              0.0568,
+              0.093
+            ]
+          },
+          "IoU_background": {
+            "mean": 0.9125,
+            "std": 0.0147,
+            "values": [
+              0.9103,
+              0.8957,
+              0.9315
+            ]
+          },
+          "precision": {
+            "mean": 0.103,
+            "std": 0.0241,
+            "values": [
+              0.1125,
+              0.0699,
+              0.1267
+            ]
+          },
+          "recall": {
+            "mean": 0.2751,
+            "std": 0.0434,
+            "values": [
+              0.3344,
+              0.2319,
+              0.2589
+            ]
+          },
+          "f1": {
+            "mean": 0.1486,
+            "std": 0.0291,
+            "values": [
+              0.1683,
+              0.1074,
+              0.1701
+            ]
+          },
+          "false_positive_rate": {
+            "mean": 0.0692,
+            "std": 0.0149,
+            "values": [
+              0.073,
+              0.0853,
+              0.0494
+            ]
+          },
+          "pixel_accuracy": {
+            "mean": 0.9131,
+            "std": 0.0146,
+            "values": [
+              0.9111,
+              0.8963,
+              0.932
+            ]
+          },
+          "AUPRC": {
+            "mean": 0.0811,
+            "std": 0.0212,
+            "values": [
+              0.0772,
+              0.0574,
+              0.1088
+            ]
+          },
+          "best_f1": {
+            "mean": 0.1543,
+            "std": 0.0227,
+            "values": [
+              0.1687,
+              0.1222,
+              0.172
+            ]
+          },
+          "best_f1_threshold": {
+            "mean": 0.565,
+            "std": 0.0826,
+            "values": [
+              0.525,
+              0.68,
+              0.49
+            ]
+          },
+          "IoU_fg_at_best_f1": {
+            "mean": 0.0838,
+            "std": 0.0132,
+            "values": [
+              0.0921,
+              0.0651,
+              0.0941
+            ]
+          },
+          "recall_at_fpr_005": {
+            "mean": 0.2278,
+            "std": 0.0344,
+            "values": [
+              0.2438,
+              0.18,
+              0.2597
+            ]
+          },
+          "IoU_fg_at_fpr_005": {
+            "mean": 0.0813,
+            "std": 0.0125,
+            "values": [
+              0.0869,
+              0.0639,
+              0.093
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sam_dataset_SITUBONDO_SITUBONDO": {
+    "PD": 0.2745,
+    "LPI": 0.1925,
+    "ED": 0.3072
+  },
+  "sam_dataset_Tangerang_Sepatan_Timur": {
+    "PD": 0.1883,
+    "LPI": -0.2163,
+    "ED": -0.0342
+  },
+  "pooled": {
+    "PD": 0.2329,
+    "LPI": -0.016,
+    "ED": 0.143
+  }
+}

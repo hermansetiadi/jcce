@@ -1,0 +1,20 @@
+{
+  "positive tiles (cov > 5%)": {
+    "n_tiles": 60,
+    "labelled_pixels_median": 550260,
+    "labelled_pixels_mean": 529140,
+    "boundary_px_median": 4851.1,
+    "boundary_px_mean": 5122.9
+  },
+  "background-dominated tiles": {
+    "n_tiles": 6,
+    "labelled_pixels_median": 32247,
+    "labelled_pixels_mean": 30654,
+    "boundary_px_median": 1061.3,
+    "boundary_px_mean": 1085.3
+  },
+  "ratio_positive_over_background": {
+    "labelled_pixels": 17.06,
+    "boundary_px": 4.57
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "A (positives only)": {
+    "paddy_below_0.5": 0.2622,
+    "background_above_0.5": 0.1484
+  },
+  "B (+ background-dominated)": {
+    "paddy_below_0.5": 0.3038,
+    "background_above_0.5": 0.0976
+  }
+}

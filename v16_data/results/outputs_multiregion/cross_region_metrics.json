@@ -1,0 +1,1135 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "regions": [
+      "sam_dataset_SITUBONDO_SITUBONDO",
+      "sam_dataset_Tangerang_Sepatan_Timur"
+    ]
+  },
+  "directions": {
+    "sam_dataset_SITUBONDO_SITUBONDO__to__sam_dataset_Tangerang_Sepatan_Timur": {
+      "source_region": "sam_dataset_SITUBONDO_SITUBONDO",
+      "target_region": "sam_dataset_Tangerang_Sepatan_Timur",
+      "setups": {
+        "setup_a": {
+          "n_train": 10,
+          "encoder_weights": "imagenet",
+          "seeds": [
+            {
+              "seed": 42,
+              "best_epoch": 600,
+              "best_val_mIoU": 0.455
+            },
+            {
+              "seed": 43,
+              "best_epoch": 150,
+              "best_val_mIoU": 0.4711
+            },
+            {
+              "seed": 44,
+              "best_epoch": 200,
+              "best_val_mIoU": 0.4728
+            }
+          ],
+          "test_overall": {
+            "mIoU": {
+              "mean": 0.575,
+              "std": 0.0387,
+              "values": [
+                0.551,
+                0.6296,
+                0.5445
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.5338,
+              "std": 0.0479,
+              "values": [
+                0.5356,
+                0.5916,
+                0.4743
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.6162,
+              "std": 0.0414,
+              "values": [
+                0.5663,
+                0.6677,
+                0.6146
+              ]
+            },
+            "precision": {
+              "mean": 0.6783,
+              "std": 0.0391,
+              "values": [
+                0.6278,
+                0.7231,
+                0.6841
+              ]
+            },
+            "recall": {
+              "mean": 0.719,
+              "std": 0.0793,
+              "values": [
+                0.7848,
+                0.7648,
+                0.6074
+              ]
+            },
+            "f1": {
+              "mean": 0.6948,
+              "std": 0.0408,
+              "values": [
+                0.6976,
+                0.7434,
+                0.6435
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.2557,
+              "std": 0.0623,
+              "values": [
+                0.3436,
+                0.2163,
+                0.2072
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.7335,
+              "std": 0.0298,
+              "values": [
+                0.7109,
+                0.7757,
+                0.714
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.7039,
+              "std": 0.014,
+              "values": [
+                0.685,
+                0.7082,
+                0.7184
+              ]
+            },
+            "best_f1": {
+              "mean": 0.7296,
+              "std": 0.0169,
+              "values": [
+                0.7196,
+                0.7535,
+                0.7158
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.1733,
+              "std": 0.0388,
+              "values": [
+                0.175,
+                0.22,
+                0.125
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.5746,
+              "std": 0.0212,
+              "values": [
+                0.562,
+                0.6045,
+                0.5574
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.2457,
+              "std": 0.0344,
+              "values": [
+                0.268,
+                0.1971,
+                0.2719
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.2294,
+              "std": 0.0334,
+              "values": [
+                0.2516,
+                0.1822,
+                0.2544
+              ]
+            }
+          },
+          "test_low_coverage": {
+            "mIoU": {
+              "mean": 0.395,
+              "std": 0.0497,
+              "values": [
+                0.3266,
+                0.4432,
+                0.4151
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.0393,
+              "std": 0.0078,
+              "values": [
+                0.0282,
+                0.0455,
+                0.0441
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.7506,
+              "std": 0.0916,
+              "values": [
+                0.625,
+                0.8409,
+                0.786
+              ]
+            },
+            "precision": {
+              "mean": 0.0431,
+              "std": 0.0097,
+              "values": [
+                0.0295,
+                0.0518,
+                0.048
+              ]
+            },
+            "recall": {
+              "mean": 0.3397,
+              "std": 0.0493,
+              "values": [
+                0.391,
+                0.2731,
+                0.3551
+              ]
+            },
+            "f1": {
+              "mean": 0.0755,
+              "std": 0.0146,
+              "values": [
+                0.0549,
+                0.087,
+                0.0845
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.2353,
+              "std": 0.0943,
+              "values": [
+                0.3643,
+                0.1418,
+                0.1997
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.7531,
+              "std": 0.0905,
+              "values": [
+                0.629,
+                0.8421,
+                0.7881
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.0415,
+              "std": 0.007,
+              "values": [
+                0.0323,
+                0.0432,
+                0.0491
+              ]
+            },
+            "best_f1": {
+              "mean": 0.0913,
+              "std": 0.0149,
+              "values": [
+                0.0733,
+                0.0907,
+                0.1098
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.4733,
+              "std": 0.3718,
+              "values": [
+                0.05,
+                0.415,
+                0.955
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.0479,
+              "std": 0.0082,
+              "values": [
+                0.038,
+                0.0475,
+                0.0581
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.0917,
+              "std": 0.0473,
+              "values": [
+                0.0701,
+                0.0477,
+                0.1573
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.0322,
+              "std": 0.0173,
+              "values": [
+                0.0226,
+                0.0175,
+                0.0565
+              ]
+            }
+          }
+        },
+        "setup_b": {
+          "n_train": 15,
+          "encoder_weights": "imagenet",
+          "seeds": [
+            {
+              "seed": 42,
+              "best_epoch": 650,
+              "best_val_mIoU": 0.5415
+            },
+            {
+              "seed": 43,
+              "best_epoch": 150,
+              "best_val_mIoU": 0.4957
+            },
+            {
+              "seed": 44,
+              "best_epoch": 1300,
+              "best_val_mIoU": 0.5315
+            }
+          ],
+          "test_overall": {
+            "mIoU": {
+              "mean": 0.5308,
+              "std": 0.0296,
+              "values": [
+                0.4938,
+                0.5662,
+                0.5325
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.4507,
+              "std": 0.059,
+              "values": [
+                0.3867,
+                0.529,
+                0.4363
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.611,
+              "std": 0.0126,
+              "values": [
+                0.6009,
+                0.6033,
+                0.6288
+              ]
+            },
+            "precision": {
+              "mean": 0.6868,
+              "std": 0.0247,
+              "values": [
+                0.6789,
+                0.6614,
+                0.7202
+              ]
+            },
+            "recall": {
+              "mean": 0.5746,
+              "std": 0.1087,
+              "values": [
+                0.4732,
+                0.7254,
+                0.5253
+              ]
+            },
+            "f1": {
+              "mean": 0.619,
+              "std": 0.0554,
+              "values": [
+                0.5577,
+                0.6919,
+                0.6075
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.1968,
+              "std": 0.0551,
+              "values": [
+                0.1653,
+                0.2743,
+                0.1507
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.7061,
+              "std": 0.0186,
+              "values": [
+                0.6811,
+                0.7256,
+                0.7116
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.7023,
+              "std": 0.0065,
+              "values": [
+                0.6931,
+                0.7068,
+                0.707
+              ]
+            },
+            "best_f1": {
+              "mean": 0.6962,
+              "std": 0.012,
+              "values": [
+                0.6803,
+                0.7094,
+                0.6989
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.08,
+              "std": 0.1026,
+              "values": [
+                0.01,
+                0.225,
+                0.005
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.5341,
+              "std": 0.0141,
+              "values": [
+                0.5155,
+                0.5497,
+                0.5371
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.2741,
+              "std": 0.0435,
+              "values": [
+                0.2686,
+                0.2238,
+                0.33
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.2563,
+              "std": 0.0399,
+              "values": [
+                0.2515,
+                0.2101,
+                0.3074
+              ]
+            }
+          },
+          "test_low_coverage": {
+            "mIoU": {
+              "mean": 0.4426,
+              "std": 0.0181,
+              "values": [
+                0.4668,
+                0.4231,
+                0.438
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.0258,
+              "std": 0.0182,
+              "values": [
+                0.0393,
+                0.038,
+                0.0
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.8595,
+              "std": 0.0371,
+              "values": [
+                0.8943,
+                0.8082,
+                0.8761
+              ]
+            },
+            "precision": {
+              "mean": 0.0307,
+              "std": 0.022,
+              "values": [
+                0.0499,
+                0.0423,
+                0.0
+              ]
+            },
+            "recall": {
+              "mean": 0.143,
+              "std": 0.1118,
+              "values": [
+                0.1561,
+                0.2729,
+                0.0
+              ]
+            },
+            "f1": {
+              "mean": 0.0496,
+              "std": 0.0351,
+              "values": [
+                0.0756,
+                0.0732,
+                0.0
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.1195,
+              "std": 0.0398,
+              "values": [
+                0.0843,
+                0.1751,
+                0.0991
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.8602,
+              "std": 0.0365,
+              "values": [
+                0.8947,
+                0.8097,
+                0.8761
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.038,
+              "std": 0.0095,
+              "values": [
+                0.0418,
+                0.0473,
+                0.0249
+              ]
+            },
+            "best_f1": {
+              "mean": 0.087,
+              "std": 0.0284,
+              "values": [
+                0.0832,
+                0.1236,
+                0.0543
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.09,
+              "std": 0.1098,
+              "values": [
+                0.02,
+                0.245,
+                0.005
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.0457,
+              "std": 0.0156,
+              "values": [
+                0.0434,
+                0.0659,
+                0.0279
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.0326,
+              "std": 0.0461,
+              "values": [
+                0.0978,
+                0.0,
+                0.0
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.0117,
+              "std": 0.0165,
+              "values": [
+                0.0351,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "sam_dataset_Tangerang_Sepatan_Timur__to__sam_dataset_SITUBONDO_SITUBONDO": {
+      "source_region": "sam_dataset_Tangerang_Sepatan_Timur",
+      "target_region": "sam_dataset_SITUBONDO_SITUBONDO",
+      "setups": {
+        "setup_a": {
+          "n_train": 10,
+          "encoder_weights": "imagenet",
+          "seeds": [
+            {
+              "seed": 42,
+              "best_epoch": 150,
+              "best_val_mIoU": 0.7975
+            },
+            {
+              "seed": 43,
+              "best_epoch": 150,
+              "best_val_mIoU": 0.7854
+            },
+            {
+              "seed": 44,
+              "best_epoch": 800,
+              "best_val_mIoU": 0.788
+            }
+          ],
+          "test_overall": {
+            "mIoU": {
+              "mean": 0.6407,
+              "std": 0.0262,
+              "values": [
+                0.6777,
+                0.6238,
+                0.6205
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.5474,
+              "std": 0.0182,
+              "values": [
+                0.572,
+                0.5417,
+                0.5284
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.734,
+              "std": 0.0351,
+              "values": [
+                0.7835,
+                0.7059,
+                0.7126
+              ]
+            },
+            "precision": {
+              "mean": 0.6253,
+              "std": 0.05,
+              "values": [
+                0.6958,
+                0.5864,
+                0.5936
+              ]
+            },
+            "recall": {
+              "mean": 0.8224,
+              "std": 0.0466,
+              "values": [
+                0.7628,
+                0.8765,
+                0.8278
+              ]
+            },
+            "f1": {
+              "mean": 0.7073,
+              "std": 0.0152,
+              "values": [
+                0.7277,
+                0.7027,
+                0.6914
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.211,
+              "std": 0.0516,
+              "values": [
+                0.139,
+                0.2577,
+                0.2362
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.7988,
+              "std": 0.0235,
+              "values": [
+                0.8321,
+                0.7818,
+                0.7826
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.6984,
+              "std": 0.0266,
+              "values": [
+                0.7231,
+                0.7107,
+                0.6614
+              ]
+            },
+            "best_f1": {
+              "mean": 0.7105,
+              "std": 0.0167,
+              "values": [
+                0.7325,
+                0.707,
+                0.6921
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.565,
+              "std": 0.1163,
+              "values": [
+                0.41,
+                0.69,
+                0.595
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.5513,
+              "std": 0.0202,
+              "values": [
+                0.578,
+                0.5468,
+                0.5292
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.4123,
+              "std": 0.0198,
+              "values": [
+                0.4108,
+                0.3888,
+                0.4372
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.3635,
+              "std": 0.0116,
+              "values": [
+                0.3669,
+                0.348,
+                0.3757
+              ]
+            }
+          },
+          "test_low_coverage": {
+            "mIoU": {
+              "mean": 0.4324,
+              "std": 0.0283,
+              "values": [
+                0.4718,
+                0.4069,
+                0.4184
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.0629,
+              "std": 0.013,
+              "values": [
+                0.0812,
+                0.0544,
+                0.053
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.8019,
+              "std": 0.0439,
+              "values": [
+                0.8624,
+                0.7595,
+                0.7838
+              ]
+            },
+            "precision": {
+              "mean": 0.0681,
+              "std": 0.0156,
+              "values": [
+                0.0901,
+                0.0574,
+                0.0567
+              ]
+            },
+            "recall": {
+              "mean": 0.47,
+              "std": 0.0293,
+              "values": [
+                0.4505,
+                0.5115,
+                0.4481
+              ]
+            },
+            "f1": {
+              "mean": 0.118,
+              "std": 0.0228,
+              "values": [
+                0.1502,
+                0.1032,
+                0.1006
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.1865,
+              "std": 0.045,
+              "values": [
+                0.1246,
+                0.2304,
+                0.2044
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.8044,
+              "std": 0.0433,
+              "values": [
+                0.8641,
+                0.7628,
+                0.7863
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.065,
+              "std": 0.0195,
+              "values": [
+                0.092,
+                0.056,
+                0.0469
+              ]
+            },
+            "best_f1": {
+              "mean": 0.1372,
+              "std": 0.0325,
+              "values": [
+                0.1822,
+                0.1229,
+                0.1066
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.9283,
+              "std": 0.0155,
+              "values": [
+                0.95,
+                0.92,
+                0.915
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.074,
+              "std": 0.0189,
+              "values": [
+                0.1002,
+                0.0655,
+                0.0563
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.1764,
+              "std": 0.0723,
+              "values": [
+                0.271,
+                0.1626,
+                0.0956
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.0631,
+              "std": 0.0256,
+              "values": [
+                0.0959,
+                0.06,
+                0.0335
+              ]
+            }
+          }
+        },
+        "setup_b": {
+          "n_train": 11,
+          "encoder_weights": "imagenet",
+          "seeds": [
+            {
+              "seed": 42,
+              "best_epoch": 1150,
+              "best_val_mIoU": 0.8099
+            },
+            {
+              "seed": 43,
+              "best_epoch": 450,
+              "best_val_mIoU": 0.7975
+            },
+            {
+              "seed": 44,
+              "best_epoch": 400,
+              "best_val_mIoU": 0.8166
+            }
+          ],
+          "test_overall": {
+            "mIoU": {
+              "mean": 0.5735,
+              "std": 0.0168,
+              "values": [
+                0.5501,
+                0.5885,
+                0.5819
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.4842,
+              "std": 0.0135,
+              "values": [
+                0.4733,
+                0.5033,
+                0.4761
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.6628,
+              "std": 0.026,
+              "values": [
+                0.6269,
+                0.6737,
+                0.6877
+              ]
+            },
+            "precision": {
+              "mean": 0.545,
+              "std": 0.0215,
+              "values": [
+                0.5152,
+                0.5546,
+                0.5651
+              ]
+            },
+            "recall": {
+              "mean": 0.8165,
+              "std": 0.0461,
+              "values": [
+                0.8535,
+                0.8445,
+                0.7515
+              ]
+            },
+            "f1": {
+              "mean": 0.6524,
+              "std": 0.0122,
+              "values": [
+                0.6425,
+                0.6696,
+                0.6451
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.2862,
+              "std": 0.0383,
+              "values": [
+                0.3348,
+                0.2827,
+                0.2411
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.744,
+              "std": 0.0166,
+              "values": [
+                0.7206,
+                0.7548,
+                0.7567
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.6221,
+              "std": 0.038,
+              "values": [
+                0.569,
+                0.6557,
+                0.6417
+              ]
+            },
+            "best_f1": {
+              "mean": 0.66,
+              "std": 0.0165,
+              "values": [
+                0.6518,
+                0.683,
+                0.6453
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.795,
+              "std": 0.1687,
+              "values": [
+                0.965,
+                0.855,
+                0.565
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.4928,
+              "std": 0.0184,
+              "values": [
+                0.4835,
+                0.5186,
+                0.4764
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.4905,
+              "std": 0.1511,
+              "values": [
+                0.6865,
+                0.4662,
+                0.3189
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.3852,
+              "std": 0.0777,
+              "values": [
+                0.4738,
+                0.397,
+                0.2847
+              ]
+            }
+          },
+          "test_low_coverage": {
+            "mIoU": {
+              "mean": 0.3805,
+              "std": 0.0239,
+              "values": [
+                0.3491,
+                0.3851,
+                0.4072
+              ]
+            },
+            "IoU_foreground": {
+              "mean": 0.0454,
+              "std": 0.0052,
+              "values": [
+                0.0454,
+                0.0391,
+                0.0518
+              ]
+            },
+            "IoU_background": {
+              "mean": 0.7155,
+              "std": 0.0462,
+              "values": [
+                0.6528,
+                0.731,
+                0.7627
+              ]
+            },
+            "precision": {
+              "mean": 0.0477,
+              "std": 0.0055,
+              "values": [
+                0.0467,
+                0.0415,
+                0.0549
+              ]
+            },
+            "recall": {
+              "mean": 0.498,
+              "std": 0.0838,
+              "values": [
+                0.6085,
+                0.4058,
+                0.4797
+              ]
+            },
+            "f1": {
+              "mean": 0.0868,
+              "std": 0.0095,
+              "values": [
+                0.0868,
+                0.0752,
+                0.0985
+              ]
+            },
+            "false_positive_rate": {
+              "mean": 0.2746,
+              "std": 0.048,
+              "values": [
+                0.3402,
+                0.2571,
+                0.2265
+              ]
+            },
+            "pixel_accuracy": {
+              "mean": 0.7193,
+              "std": 0.045,
+              "values": [
+                0.6584,
+                0.7339,
+                0.7657
+              ]
+            },
+            "AUPRC": {
+              "mean": 0.0518,
+              "std": 0.012,
+              "values": [
+                0.0456,
+                0.0412,
+                0.0685
+              ]
+            },
+            "best_f1": {
+              "mean": 0.1057,
+              "std": 0.0271,
+              "values": [
+                0.0949,
+                0.0792,
+                0.1429
+              ]
+            },
+            "best_f1_threshold": {
+              "mean": 0.9617,
+              "std": 0.0403,
+              "values": [
+                0.995,
+                0.905,
+                0.985
+              ]
+            },
+            "IoU_fg_at_best_f1": {
+              "mean": 0.056,
+              "std": 0.0152,
+              "values": [
+                0.0498,
+                0.0412,
+                0.0769
+              ]
+            },
+            "recall_at_fpr_005": {
+              "mean": 0.2482,
+              "std": 0.1101,
+              "values": [
+                0.3982,
+                0.1371,
+                0.2093
+              ]
+            },
+            "IoU_fg_at_fpr_005": {
+              "mean": 0.0536,
+              "std": 0.0125,
+              "values": [
+                0.0498,
+                0.0406,
+                0.0704
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "checks": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "determinism": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "plumbing": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "build": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "pilot": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "multiregion": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "proxy": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "efficiency": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "selection": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "domain_adapt": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "ablation": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "figures": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "figure4": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring",
+  "figure5": "2026-09-07 partition-scoped selection; rebalanced blocks; fresh-marker guard; step schedule; unique-area scoring"
+}
